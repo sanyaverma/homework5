@@ -70,6 +70,8 @@ footer{
 #logo{
    /*Your code here.*/
    animation-duration: 15s;
+   animation-name: logo_wiggle;
+   -webkit-animation-name: logo_wiggle;
 }
 
 /* Cards! */
@@ -140,8 +142,9 @@ footer{
   /*Your code here again.*/
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  text-align: center;
+  text-align: stretch;
 
 }
 
@@ -188,10 +191,6 @@ header{
   .card {
     /*Your  code here again.*/
     min-height: 225px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
   }
 
   .card_big{
@@ -201,21 +200,14 @@ header{
 
   /* Navbar */
   header{
-    /*Your code here again.*/  
-    background: #fff;
-    border-bottom: 3px solid #50C7C7;
     /*Your  code here again.*/
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 
   .nav_links{
     /*Your code here again.*/  
-    display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -230,7 +222,18 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
-  
+  body{
+    background-image: none;
+  }
+  .pricing{
+    align-items: flex-start;
+  }
+  #gallery{
+    display: none;
+  }
+  .gallery{
+    display: none;
+  }
 }
 
 /*Your code here again.*/ 
