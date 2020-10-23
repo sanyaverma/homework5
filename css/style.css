@@ -55,17 +55,21 @@ footer{
 
 @-webkit-keyframes logo_wiggle{
   /*Your code here.*/
+  from {width: 25;}
+  to {width: 420;}
 
 }
 
 @keyframes logo_wiggle{
   /*Your code here.*/
+  from {width: 25;}
+  to {width: 420;}
 
 } 
 
 #logo{
    /*Your code here.*/
- 
+   animation-duration: 15s;
 }
 
 /* Cards! */
@@ -73,6 +77,10 @@ footer{
     min-height: 500px;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   
 }
 
@@ -83,6 +91,7 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
+  flex-basis: 400px;
 
 }
 
@@ -129,6 +138,11 @@ footer{
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+
 }
 
 .gallery > img{
@@ -142,10 +156,18 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav_links{
   /*Your code here again.*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav_item a{
@@ -165,6 +187,11 @@ header{
   /* Cards! */
   .card {
     /*Your  code here again.*/
+    min-height: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .card_big{
@@ -175,10 +202,21 @@ header{
   /* Navbar */
   header{
     /*Your code here again.*/  
+    background: #fff;
+    border-bottom: 3px solid #50C7C7;
+    /*Your  code here again.*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav_links{
     /*Your code here again.*/  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .nav_item a{
@@ -192,7 +230,16 @@ header{
   }
   /*Your code here again.*/
   /*You will want four selectors*/  
+  
 }
 
 /*Your code here again.*/ 
 /*Add media query to handle reduced-motion*/
+@media screen and (prefers-reduced-motion: reduce){
+  #logo{
+    animation-name: logo_wiggle;
+    -webkit-animation-name: logo_wiggle;
+    animation-duration: 0s;
+    -webkit-animation-duration: 0s;
+  }
+}
