@@ -55,23 +55,22 @@ footer{
 
 @-webkit-keyframes logo_wiggle{
   /*Your code here.*/
-  from {width: 25;}
-  to {width: 420;}
-
+  from {width: 25px;}
+  to {width: 420px;}
 }
 
 @keyframes logo_wiggle{
   /*Your code here.*/
-  from {width: 25;}
-  to {width: 420;}
-
+  from {width: 25px;}
+  to {width: 420px;}
 } 
 
 #logo{
    /*Your code here.*/
-   animation-duration: 15s;
+   animation-duration: 3s;
    animation-name: logo_wiggle;
    -webkit-animation-name: logo_wiggle;
+ 
 }
 
 /* Cards! */
@@ -81,8 +80,8 @@ footer{
     /*Don't forget to vertically and horizontally alight the card*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   
 }
 
